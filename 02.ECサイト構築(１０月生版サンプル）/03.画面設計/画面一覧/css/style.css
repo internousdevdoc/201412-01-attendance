@@ -1,0 +1,59 @@
+@charset "shift_jis";
+
+/* ===================== import each stylesheet ===================== */
+
+@import url("reset.css");
+@import url("text.css");
+@import url("templates.css");
+@import url("general.css");
+@import url("hdr-ftr.css");
+
+
+.msg{
+	margin-top:8px;
+}
+.cart{
+	margin-left:10px;
+	margin-top:-14px;
+}
+
+.icn_img{
+	margin-top:8px;
+}
+
+#nav{
+	width:250px;
+	margin-left:200px;
+	margin-top:30px;
+	margin-right:-200px;
+	float:left;
+}
+
+#main{
+	float:left;
+	margin-top:30px;
+}
+
+#cart_ck{
+	font-size:150%;
+}
+
+#admin_in{
+/*	width:200px;
+	height:100px;
+	background-color:#CC0000;
+*/
+}
+
+#admin_in_info{
+/*	color:white;
+	margin-left:20px;
+	padding-top:10px;
+*/
+	margin-left:1000px;
+	margin-top:-20px;
+}
+
+.foot-info{
+	padding-left:150px;
+}

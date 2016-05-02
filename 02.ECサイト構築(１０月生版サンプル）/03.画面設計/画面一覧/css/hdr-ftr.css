@@ -1,0 +1,38 @@
+@charset "shift_jis";
+
+/* ===================== header ===================== */
+
+
+#header .head-cont_01 {
+background:#ce123a;
+}
+#header .head-cont_01 a#logo {
+background:url(../img/logo.gif) no-repeat left top;
+}
+#header .head-cont_01 .head-bdr {
+background:#900d28;
+}
+#header #log-box #head-membership p.regist a:hover,
+#header #log-box #head-cart p.cart a:hover,
+#header #log-box #head-cart p.loggedin a:hover,
+#header #log-box #head-cart p.loggedout a:hover {
+background-color:#900d28;
+}
+
+/* -- newsbar -- */
+.newsbar {
+width:100%;
+height:35px;
+margin-top:0px;
+background:#eeeeee;
+}
+
+/* ===================== footer ===================== */
+
+
+#footer .ftr-cont_01 .moma-strip {
+background:#ce123a;
+}
+#footer .ftr-cont_01 .moma-strip .support-txt {
+background:url(/11111/common/img/logo_txt_ftr_red.gif) no-repeat left top;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="jp.co.internous.login" extends="struts-default">
+
+		<!-- ログイン画面 -->
+		<action name="LoginAction" class="jp.co.internous.action.LoginAction">
+			<result name="success">/Menu.jsp</result>
+			<result name="error">/LoginError.jsp</result>
+		</action>
+
+<action name="TCAction"
+         class="jp.co.internous.action.TCAction"
+         method="execute">
+         <result name="success">/TimeChange.jsp</result>
+          <result name="error">TimeChange.jsp</result>
+	</action>
+
+	<action name="LogoutAction"
+         class="jp.co.internous.action.LogoutAction"
+         method="execute">
+         <result name="success">/Login.jsp</result>
+	</action>
+
+	<action name="Go2CreateUserAction"
+         class="jp.co.internous.action.Go2CreateUserAction"
+         method="execute">
+         <result name="success">/Newlogin.jsp</result>
+	</action>
+
+	<action name="Go2MainAction"
+         class="jp.co.internous.action.Go2MainAction"
+         method="execute">
+         <result name="success">/main.jsp</result>
+	</action>
+
+	<action name="Go2MenuAction"
+         class="jp.co.internous.action.Go2MenuAction"
+         method="execute">
+         <result name="success">/Menu.jsp</result>
+	</action>
+	<action name="RegisterAction"
+		class="jp.co.internous.action.RegisterAction"
+		method="execute">
+		<result name="success">Newlogin.jsp</result>
+		<result name="error">Newlogin.jsp</result>
+	</action>
+	<action name="ResignAction"
+		class="jp.co.internous.action.ResignAction"
+		method="execute">
+		 <result name="success">Login.jsp</result>
+		 <result name="error">PasswdChange.jsp</result>
+	</action>
+	<action name="ChangePassWordAction"
+         class="jp.co.internous.action.ChangePassWordAction"
+         method="execute">
+         <result name="success">/PasswdChange.jsp</result>
+		 <result name="error">/PasswdChange.jsp</result>
+	</action>
+	<action name="AttendanceAction"
+         class="jp.co.internous.action.AttendanceAction"
+         method="execute">
+         <result name="ADateTime">main.jsp</result>
+	</action>
+	<action name="Go2TimeChangeAction"
+		class="jp.co.internous.action.Go2TimeChangeAction"
+		method="execute">
+		<result name="success">TimeChange.jsp</result>
+	</action>
+	<action name="TimeChangeAction"
+		class="jp.co.internous.action.TimeChangeAction"
+		method="execute">
+		<result name="success">TimeChange.jsp</result>
+		<result name="error">TimeChange.jsp</result>
+	</action>
+	<action name="ModifyByeByeTimeAction"
+		class="jp.co.internous.action.ModifyByeByeTimeAction"
+		method="execute">
+		<result name="success">TimeChange.jsp</result>
+		<result name="error">TimeChange.jsp</result>
+	</action>
+	<action name="MenutoMainAction"
+		class="jp.co.internous.action.MenutoMainAction"
+		method="execute">
+		<result name="success">main.jsp</result>
+	</action>
+	<action name="ByeByeTimeAction"
+		class="jp.co.internous.action.ByeByeTimeAction"
+		method="execute">
+		<result name="success">main.jsp</result>
+		<result name="error">main.jsp</result>
+	</action>
+	<action name="Go2PasswdChangeAction"
+		class="jp.co.internous.action.Go2PasswdChangeAction"
+		method="execute">
+		<result name="success">PasswdChange.jsp</result>
+	</action>
+
+	</package>
+
+</struts>

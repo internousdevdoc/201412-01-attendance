@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS ORDER_TABLE(
+-- 注文ID
+order_id int not null primary key auto_increment,
+-- 商品ID
+item_id int not null,
+-- 注文数
+order_count int not null default "0",
+-- 購入者
+order_customer varchar(50) not null,
+-- 郵便番号
+order_post varchar(7) not null,
+-- 電話番号
+order_phone varchar(11) not null,
+-- Eメールアドレス
+order_mail varchar(255) not null,
+-- 届け先
+order_destination varchar(255) not null,
+-- 購入日
+order_day datetime not null default current_timestamp
+);
+
+-- 注文情報データの登録（10月生
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (1,2,"カービィ","1234567","00012345678","commando@ne.jp","愛知県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (2,4,"ジャクソン","1234567","00012345678","commando@ne.jp","静岡県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (3,6,"サリー","1234567","00012345678","commando@ne.jp","岐阜県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (4,1,"エンリスケ","1234567","00012345678","commando@ne.jp","三重県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (5,8,"ベネット","1234567","00012345678","commando@ne.jp","福井県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (6,30,"ハリス","1234567","00012345678","commando@ne.jp","富山県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (7,12,"ローソン","1234567","00012345678","commando@ne.jp","新潟県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (8,25,"フォレスタス","1234567","00012345678","commando@ne.jp","石川県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (9,27,"クック","1234567","00012345678","commando@ne.jp","長野県");
+INSERT INTO ORDER_TABLE(item_id,order_count,order_customer,order_post,order_phone,order_mail,order_destination) 
+values (10,10,"シンディ","1234567","00012345678","commando@ne.jp","山梨県"
+);

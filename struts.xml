@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="jp.co.internous.login" extends="struts-default">
+
+<!-- tesuto  -->
+<!-- 伊佐さん -->
+
+<!-- ログインボタンからメニュー画面へ OK-->
+	<action name="LoginAction"
+	class="jp.co.internous.action.LoginAction">
+		<result name="success">/Menu.jsp</result>
+		<result name="error">/Loginerror2.jsp</result>
+	</action>
+
+<!-- ログアウトボタンからログイン画面へ OK-->
+	<action name="LogoutAction"
+         class="jp.co.internous.action.LogoutAction"
+         method="execute">
+         <result name="success">/Login.jsp</result>
+	</action>
+
+<!-- 新規登録ボタンから新規登録画面へ OK-->
+	<action name="Go2CreateUserAction"
+         class="jp.co.internous.action.Go2CreateUserAction"
+         method="execute">
+         <result name="success">/New.jsp</result>
+	</action>
+
+<!-- 新規登録画面から登録完了画面へ OK-->
+	<action name="RegisterAction"
+		class="jp.co.internous.action.RegisterAction"
+		method="execute">
+		<result name="success">touroku.jsp</result>
+		<result name="error">Newerror.jsp</result>
+	</action>
+
+
+<!-- 尾崎さん -->
+<!-- メニュー画面からパスワード変更画面へ OK-->
+	<action name="Go2PasswdChangeAction"
+		class="jp.co.internous.action.Go2PasswdChangeAction"
+		method="execute">
+		<result name="success">PasswdChange.jsp</result>
+	</action>
+
+<!-- パス変更ボタンからパスワード変更画面へ -->
+	<action name="ChangePassWordAction"
+         class="jp.co.internous.action.ChangePassWordAction"
+         method="execute">
+         <result name="success">/PasswdChange.jsp</result>
+		 <result name="error">/PasswdChange.jsp</result>
+	</action>
+
+<!-- 退会ボタンから退会完了画面へ -->
+	<action name="ResignAction"
+		class="jp.co.internous.action.ResignAction"
+		method="execute">
+		 <result name="success">ResignOK.jsp</result>
+		 <result name="error">PasswdChange.jsp</result>
+	</action>
+
+<!-- メインアクションからメイン画面へ OK-->
+	<action name="MenutoMainAction"
+		class="jp.co.internous.action.MenutoMainAction"
+		method="execute">
+		<result name="success">main.jsp</result>
+	</action>
+
+<!-- 平山さん -->
+<!-- メニュー画面から時間変更画面へ -->
+	<action name="Go2TimeChangeAction"
+		class="jp.co.internous.action.Go2TimeChangeAction"
+		method="execute">
+		<result name="success">TimeChange.jsp</result>
+	</action>
+
+<!-- 出勤ボタンからメインアクションへ -->
+      <action name="AttendanceAction"
+         class="jp.co.internous.action.AttendanceAction"
+         method="execute">
+         <result name="SUCCESS" type="chain">MenutoMainAction</result>
+      </action>
+<!-- 退勤ボタンから退勤アクションへ -->
+            <action name="ByeByeTimeAction"
+         class="jp.co.internous.action.ByeByeTimeAction"
+         method="execute">
+         <result name="SUCCESS" type="chain">MenutoMainAction</result>
+      </action>
+
+<!-- 中島さん -->
+<!-- 時間変更画面から時間変更画面へ -->
+	<action name="TCAction"
+         class="jp.co.internous.action.TCAction"
+         method="execute">
+         <result name="success">/TimeChange.jsp</result>
+          <result name="error">TimeChange.jsp</result>
+	</action>
+
+
+<!-- 共通 -->
+<!-- メインページボタンからメインページへ -->
+	<action name="Go2MainAction"
+         class="jp.co.internous.action.MenutoMainAction"
+         method="execute">
+         <result name="success">/main.jsp</result>
+	</action>
+
+<!-- メニューボタンからメニューページへ -->
+	<action name="Go2MenuAction"
+         class="jp.co.internous.action.Go2MenuAction"
+         method="execute">
+         <result name="success">/Menu.jsp</result>
+	</action>
+
+	</package>
+
+</struts>

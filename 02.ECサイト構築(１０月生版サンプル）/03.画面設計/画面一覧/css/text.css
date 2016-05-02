@@ -1,0 +1,110 @@
+@charset "shift_jis";
+
+
+/* ================ font-color ================ */
+
+a,
+#header #log-box #head-cart p.cart a:hover {
+text-decoration:none;
+}
+
+a:hover,
+#navigation #subnav ul li.arw-link .dropdown ul li a:hover {
+text-decoration:underline;
+}
+
+#navigation #subnav ul li a {
+color:#666666;
+font-weight:bold;
+}
+#navigation #subnav ul li a:hover {
+color:#00AEEF;
+text-decoration:none;
+}
+
+.more-link a {
+font-weight:bold!important;
+}
+
+#sitemap .more-link a {
+color:#00a4e1!important;
+}
+
+.fcb {
+color:#000000;
+}
+.red {
+color:#ed1c24;
+}
+.fcg {
+color:#666666;
+}
+.blue {
+color:#00AEEF;
+}
+.white {
+color:#FFFFFF;
+}
+.yellow {
+color:#FFB200;
+}
+
+#navigation #subnav ul li.arw-link .dropdown ul li a,
+#navigation #mainnav ul li .category-box .category-menu a,
+#sitemap .inner ul li a {
+color:#333333;
+}
+
+#header #log-box #head-cart p.cart a,
+#footer .info-strip ul li a {
+color:#ffffff;
+}
+
+
+/* ================= font-weight ================= */
+
+.fwb {
+font-weight:bold;
+}
+
+
+/* ================= font-size ================= */
+
+
+/* ----- if default size == 12px ----- */
+
+body {
+font-size:75%;
+}
+
+.search-box input,
+#navigation #mainnav ul li .goods-area .list p.price,
+#side ul.list li ul li,
+#sitemap .inner .email dd input.input-txt,
+#main_content span.asterisk,
+div#grid ul.sorted li p.estimate {
+/*font-size:84%;*/
+font-size:150%;
+}
+
+.search-box input.focusField,
+#sitemap .inner .email dd input.focusField {
+font-size:100%;
+}
+
+#header #log-box #head-membership p.msg,
+#main_content ul.ttl li,
+.order #main .orderInfo table.subTotal td span {
+font-size:117%;
+}
+
+#sitemap .inner dd.info-center span,
+#main_content ul.guest li,
+div#release h1,
+#header #log-box #head-cart .num {
+font-size:134%;
+}
+
+.order #main .orderInfo table.subTotal .all td {
+font-size:167%;
+}
